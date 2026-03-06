@@ -7,4 +7,3 @@ class SumSolution:
         self._validate_number_in_range(value=x)
         self._validate_number_in_range(value=y)
         return x + y
-
