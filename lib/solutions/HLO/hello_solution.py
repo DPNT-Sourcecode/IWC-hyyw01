@@ -7,5 +7,6 @@ class HelloSolution:
 
     def hello(self, friend_name):
         self._validate_name(name=friend_name)
-        return "I don't know what the message should be"
+        return "Hello, World!"
+
 
