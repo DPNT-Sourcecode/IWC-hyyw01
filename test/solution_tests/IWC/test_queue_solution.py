@@ -9,3 +9,12 @@ def test_enqueue_size_dequeue_flow() -> None:
         call_size().expect(1),
         call_dequeue().expect("companies_house", 1),
     ])
+
+
+def test_rule_of_three() -> None:
+
+call_enqueue(user_id=1, provider="companies_house",   timestamp='2025-10-20 12:00:00') 
+call_enqueue(user_id=2, provider="bank_statements",   timestamp='2025-10-20 12:00:00')
+call_enqueue(user_id=1, provider="id_verification",   timestamp='2025-10-20 12:00:00')
+call_enqueue(user_id=1, provider="bank_statements",   timestamp='2025-10-20 12:00:00')
+
